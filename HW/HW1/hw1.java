@@ -1,19 +1,20 @@
-public static boolean isPalindrome(String s) {
+public static boolean isPalindrome(String input) {
+    
     // Check if the string is empty
-    if (s == "" || s == " ") {
+    if (input == "" || input == " ") {
         System.out.println("Invalid Input!");
         return false;
     }
 
     // Convert to lowercase and remove non-alphanumeric characters
-    String cleanedString = s.toLowerCase().replaceAll("[^a-zA-Z0-9]", "");
+    String newInput = input.toLowerCase().replaceAll("[^a-zA-Z0-9]", "");
 
     // Check if the cleaned string is a palindrome
     int left = 0;
-    int right = cleanedString.length() - 1;
+    int right = newInput.length() - 1;
 
     while (left < right) {
-        if (cleanedString.charAt(left) != cleanedString.charAt(right)) {
+        if (newInput.charAt(left) != newInput.charAt(right)) {
             return false;
         }
         left++;
