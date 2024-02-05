@@ -1,4 +1,10 @@
 public static boolean isPalindrome(String s) {
+    // Check if the string is empty
+    if (s == "" || s == " ") {
+        System.out.println("Invalid Input!");
+        return false;
+    }
+
     // Convert to lowercase and remove non-alphanumeric characters
     String cleanedString = s.toLowerCase().replaceAll("[^a-zA-Z0-9]", "");
 
@@ -13,6 +19,5 @@ public static boolean isPalindrome(String s) {
         left++;
         right--;
     }
-
     return true;
 }
