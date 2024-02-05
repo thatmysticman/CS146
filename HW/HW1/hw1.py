@@ -1,4 +1,5 @@
 def is_palindrome(input):
+    
     # Check if the string is empty
     if input == "" or input == " ":
         print("Invalid Input!")
