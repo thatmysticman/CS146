@@ -1,4 +1,9 @@
 def is_palindrome(s):
+    # Check if the string is empty
+    if s == "" or s == " ":
+        print("Invalid Input!")
+        return False
+        
     # Convert to lowercase and remove non-alphanumeric characters
     cleaned_string = ''.join(c.lower() for c in s if c.isalnum())
 
