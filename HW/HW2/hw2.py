@@ -9,8 +9,5 @@ class Solution:
                 left = mid + 1
         return left
 
-# This is a placeholder for the isBadVersion method.
-# You should replace it with the actual implementation provided by the API.
-def isBadVersion(version):
-    # Your implementation here.
-    return False
+    def isBadVersion(self, version):
+        return version >= 5  # Placeholder value for testing.
