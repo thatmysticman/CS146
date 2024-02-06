@@ -12,11 +12,8 @@ public class Solution {
         return left;
     }
 
-    // This is a placeholder for the isBadVersion method.
-    // You should replace it with the actual implementation provided by the API.
     private boolean isBadVersion(int version) {
-        // Your implementation here.
-        return false;
+        return version >= 5; // Placeholder value for testing.
     }
 }
 
