@@ -25,3 +25,7 @@ You are given a set of product versions, and there is a function `isBadVersion(v
 5. If it is not bad, update the `left` pointer to `mid + 1`.
 6. Repeat the binary search until `left` and `right` pointers meet.
 7. Return the value of `left` as the first bad version.
+
+### Assumptions
+
+Both approaches assume the existence of the isBadVersion API, which is given externally. The `bool isBadVersion(version)` method returns whether `version` is bad. Without the external API, a placeholder condition is used for testing purposes.
