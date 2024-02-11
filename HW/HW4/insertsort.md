@@ -16,4 +16,17 @@ end function
 
 ### Time Complexity
 
-The time complexity of the given expression (1 + 1) + 7N is represented in Big O notation as O(N). This shows that the algorithm's time complexity grows linearly with the size of the input (N), with a constant factor (7) influencing the rate of growth. The order of growth for this function is linear.
+#### Big-O Analysis
+(1 + 1) + 7N ≤ 1N + 7N
+(1 + 1) + 7N ≤ 8N, ∀ n ≥ 1
+∴ (1 + 1) + 7N = O(n)
+
+#### Big-Ω Analysis
+1N ≤ (1 + 1) + 7N
+N ≤ (1 + 1) + 7N, ∀ n ≥ 1
+∴ (1 + 1) + 7N = Ω(n)
+
+#### Big-Θ Analysis
+1N ≤ (1 + 1) + 7N ≤ 1N + 7N
+N ≤ (1 + 1) + 7N ≤ 8N
+∴ (1 + 1) + 7N = Θ(n)
