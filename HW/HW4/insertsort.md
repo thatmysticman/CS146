@@ -16,17 +16,17 @@ end function
 
 ### Time Complexity
 
-#### Big-O Analysis
-(1 + 1) + 7N ≤ 1N + 7N
-(1 + 1) + 7N ≤ 8N, ∀ n ≥ 1
-∴ (1 + 1) + 7N = O(n)
+#### Big-O Analysis   
+(1 + 1) + 7N ≤ 1N + 7N   
+(1 + 1) + 7N ≤ 8N, ∀ n ≥ 1   
+∴ (1 + 1) + 7N = O(n)   
 
-#### Big-Ω Analysis
-1N ≤ (1 + 1) + 7N
-N ≤ (1 + 1) + 7N, ∀ n ≥ 1
-∴ (1 + 1) + 7N = Ω(n)
+#### Big-Ω Analysis   
+1N ≤ (1 + 1) + 7N   
+N ≤ (1 + 1) + 7N, ∀ n ≥ 1   
+∴ (1 + 1) + 7N = Ω(n)   
 
-#### Big-Θ Analysis
-1N ≤ (1 + 1) + 7N ≤ 1N + 7N
-N ≤ (1 + 1) + 7N ≤ 8N
-∴ (1 + 1) + 7N = Θ(n)
+#### Big-Θ Analysis   
+1N ≤ (1 + 1) + 7N ≤ 1N + 7N   
+N ≤ (1 + 1) + 7N ≤ 8N   
+∴ (1 + 1) + 7N = Θ(n)   
