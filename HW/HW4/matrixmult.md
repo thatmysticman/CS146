@@ -22,20 +22,22 @@ MATRIX_MULTIPLY(A, B):                                           `1 time`
 
 #### Big-O Analysis    
 1 + 1 + 1 + 1 + (N + 1) + (N)(N + 1) + (N)(N + 1) + (N)(N) + N ≤ 1N + 1N + 1N + 1N + (N + 1) + (N)(N + 1) + (N)(N + 1) + (N)(N) + N    
-4 + 3N + 3N^2 + N ≤ 4N + 3N + 3N^2 + N   
-4 + 3N + 3N^2 + N ≤ 4N + 4N + 3N^2   
-    4 + 4N + 3N^2 ≤ 8N + 3N^2, ∀ n ≥ 1      
+4 + 3N + 3N^2 ≤ 4N + 3N + 1 + 3N^2 + N   
+4 + 3N + 3N^2 ≤ 4N + 4N + + 1 + 3N^2   
+    4 + 4N + 3N^2 ≤ 8N + 3N^2 + 1, ∀ n ≥ 1      
   ∴ 4 + 4N + 3N^2 = O(N^2)     
 
 #### Big-Ω Analysis    
 1N + 1N + 1N + 1N + (N + 1) + (N)(N + 1) + (N)(N + 1) + (N)(N) + N ≤ 1 + 1 + 1 + 1 + (N + 1) + (N)(N + 1) + (N)(N + 1) + (N)(N) + N   
-8N + 3N^2 ≤ 4 + 4N + 3N^2
-      N^2 ≤ 4 + 4N + 3N^2
-∴ 4 + 4N + 3N^2 = Ω(N^2)     
+4N + 3N + 1 + 3N^2 + N  ≤ 4 + 4N + 3N^2
+   4N + 4N + + 1 + 3N^2 ≤ 4 + 4N + 3N^2
+          8N + 3N^2 + 1 ≤ 4 + 4N + 3N^2
+                    N^2 ≤ 4 + 4N + 3N^2
+        ∴ 4 + 4N + 3N^2 = Ω(N^2)     
 
-#### Big-Θ Analysis   ???????????????
-1N ≤ (1 + 1) + 7N ≤ 1N + 7N   
-N ≤ (1 + 1) + 7N ≤ 8N   
-∴ (1 + 1) + 7N = Θ(N)   
+#### Big-Θ Analysis
+N^2 ≤ 1 + 1 + 1 + 1 + (N + 1) + (N)(N + 1) + (N)(N + 1) + (N)(N) + N ≤ 1N + 1N + 1N + 1N + (N + 1) + (N)(N + 1) + (N)(N + 1) + (N)(N) + N   
+N^2 ≤ 4 + 4N + 3N^2 ≤ 8N + 3N^2 + 1 
+∴ 4 + 4N + 3N^2 = Θ(N^2)   
 
 The time complexity of the given expression 1 + 1 + 1 + 1 + (N+1) + (N)(N+1) + (N)(N+1) + (N)(N) + N is represented in Big O notation as O(N^2). This shows that the algorithm's time complexity grows quadratically with the size of the input (N^2), with a constant factor (4) influencing the rate of growth. The order of growth for this function is quadratic.
