@@ -5,8 +5,8 @@ Given an array of time intervals `intervals` where `intervals[i] = [start_i, end
 
 ### Constraints:
 
-- 1 <= intervals.length <= 10^4
-- 0 <= start_i < end_i <= 10^6    
+- `1 <= intervals.length <= 10^4`
+- `0 <= start_i < end_i <= 10^6`    
 
 ## High-Level Approaches
 
