@@ -24,5 +24,7 @@ public class Solution {
         Solution solution = new Solution();
         System.out.println(solution.longestPalindrome("abccccdd")); // Output: 7
         System.out.println(solution.longestPalindrome("speediskey")); // Output: 5
+        System.out.println(solution.longestPalindrome("Aa")); // Output: 1
+        System.out.println(solution.longestPalindrome("toinksFfdssksdf")); // Output: 11
     }
 }
