@@ -20,4 +20,6 @@ solution = Solution()
 print(solution.longestPalindrome("abccccdd"))  # Output: 7
 print(solution.longestPalindrome("speediskey"))  # Output: 5
 print(solution.longestPalindrome("zakikazan"))  # Output: 7
-print(solution.longestPalindrome("indeed"))  # Output: 4
+print(solution.longestPalindrome("indeed"))  # Output: 5
+print(solution.longestPalindrome("Aa"))  # Output: 1
+print(solution.longestPalindrome("toinksFfdssksdf"))  # Output: 11
