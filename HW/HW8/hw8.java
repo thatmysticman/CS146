@@ -1,7 +1,11 @@
-public int longestPalindrome(String s) {
+    public int longestPalindrome(String s) {
         if (s.length() < 1 || s.length() > 2000) {
         throw new IllegalArgumentException("Input string length must be between 1 and 2000 characters.");
     }
+        if (!s.matches("^[a-zA-Z]+$")) {
+        throw new IllegalArgumentException("Input string must contain only lowercase and/or uppercase English letters.");
+    }
+    
         int[] charCount = new int[128]; // Assuming ASCII characters
         
         for (char c : s.toCharArray()) {
