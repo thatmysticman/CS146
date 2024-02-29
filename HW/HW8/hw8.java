@@ -1,5 +1,7 @@
-public class Solution {
-    public int longestPalindrome(String s) {
+public int longestPalindrome(String s) {
+        if (s.length() < 1 || s.length() > 2000) {
+        throw new IllegalArgumentException("Input string length must be between 1 and 2000 characters.");
+    }
         int[] charCount = new int[128]; // Assuming ASCII characters
         
         for (char c : s.toCharArray()) {
@@ -19,12 +21,3 @@ public class Solution {
         
         return palindromeLength + (oddCountFound ? 1 : 0);
     }
-
-    public static void main(String[] args) {
-        Solution solution = new Solution();
-        System.out.println(solution.longestPalindrome("abccccdd")); // Output: 7
-        System.out.println(solution.longestPalindrome("speediskey")); // Output: 5
-        System.out.println(solution.longestPalindrome("Aa")); // Output: 1
-        System.out.println(solution.longestPalindrome("toinksFfdssksdf")); // Output: 11
-    }
-}
