@@ -9,6 +9,6 @@ def reverseTree(self, root):
         self.reverseTree(root.left)
         self.reverseTree(root.right)
 
-    def invertTree(self, root):
+def invertTree(self, root):
         self.reverseTree(root)
         return root
