@@ -1,4 +1,4 @@
-# Lab 2
+# Lab 4
 
 ## Problem
 Given the `root` of a binary tree, invert the tree, and return its root.
