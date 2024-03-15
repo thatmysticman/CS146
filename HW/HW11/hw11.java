@@ -1,6 +1,6 @@
-    public int[][] floodFill(int[][] image, int sr, int sc, int newColor) {
+    public int[][] floodFill(int[][] image, int sr, int sc, int color) {
         int oldColor = image[sr][sc];
-        if (oldColor == newColor) {
+        if (oldColor == color) {
             return image;
         }
         
@@ -11,7 +11,7 @@
             int[] coordinates = stack.pop();
             int row = coordinates[0];
             int col = coordinates[1];
-            image[row][col] = newColor;
+            image[row][col] = color;
             
             int[][] directions = {{1, 0}, {-1, 0}, {0, 1}, {0, -1}};
             for (int[] dir : directions) {
