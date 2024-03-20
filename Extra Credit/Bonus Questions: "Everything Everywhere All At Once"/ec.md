@@ -20,9 +20,9 @@ To convert an adjacency list to an adjacency matrix, we iterate through each ver
 ### Explanation:
 To convert an adjacency matrix to an adjacency list, we iterate through each row of the matrix. For each vertex, we traverse its corresponding row in the matrix and add the indices of vertices where the entry is 1 to its adjacency list.
 ### Pseudocode:
-`Function adjacencyMatrixToList(matrix)`
-`    n = Length(matrix) // Assuming square matrix`
-`    Initialize adjList[n] with empty lists`
+`Function adjacencyMatrixToList(matrix)`    
+`    n = Length(matrix) // Assuming square matrix`     
+`    Initialize adjList[n] with empty lists`    
 
     For i = 0 to n-1
         For j = 0 to n-1
@@ -40,11 +40,11 @@ To convert an adjacency matrix to an adjacency list, we iterate through each row
 ### Explanation:
 To reverse the direction of each edge in a directed graph, we swap the source and destination vertices for each edge.
 ### Pseudocode:
-`Function reverseDirectedGraph(originalGraph)`
-`    // Initialize reversedGraph with the same number of vertices as originalGraph`
-`    // but with empty lists for adjacency representation`
-    n = NumberOfVertices(originalGraph)
-    Initialize reversedGraph[n]
+`Function reverseDirectedGraph(originalGraph)`     
+`    // Initialize reversedGraph with the same number of vertices as originalGraph`   
+`    // but with empty lists for adjacency representation`    
+`    n = NumberOfVertices(originalGraph)`    
+`    Initialize reversedGraph[n]`    
 
     For each vertex v in originalGraph
         For each neighbor u of vertex v
