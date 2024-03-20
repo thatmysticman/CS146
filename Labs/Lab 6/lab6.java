@@ -1,5 +1,4 @@
     public boolean canFinish(int numCourses, int[][] prerequisites) {
-        // Construct the graph
         Map<Integer, List<Integer>> graph = new HashMap<>();
         for (int[] prerequisite : prerequisites) {
             int course = prerequisite[0];
