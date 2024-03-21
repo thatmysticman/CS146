@@ -1,12 +1,12 @@
 public class ExtraCredit {
     
     public static int[][] adjacencyListToMatrix(List<List<Integer>> adjList) {
-        int n = adjList.size(); // Number of vertices
-        int[][] adjMatrix = new int[n][n]; // Initialize n x n matrix with 0s
+        int n = adjList.size();
+        int[][] adjMatrix = new int[n][n];
         
         for (int i = 0; i < n; i++) {
             for (int neighbor : adjList.get(i)) {
-                adjMatrix[i][neighbor] = 1; // Set to 1 where there's an edge
+                adjMatrix[i][neighbor] = 1;
             }
         }
         
@@ -31,12 +31,12 @@ public class ExtraCredit {
     }
 
     public static List<List<Integer>> reverseGraph(List<List<Integer>> adjList) {
-        int n = adjList.size(); // Number of vertices
+        int n = adjList.size();
         List<List<Integer>> reversedList = new ArrayList<>(Collections.nCopies(n, new ArrayList<>()));
 
         for (int i = 0; i < n; i++) {
             for (int neighbor : adjList.get(i)) {
-                reversedList.get(neighbor).add(i); // Add i to the adjacency list of its neighbor
+                reversedList.get(neighbor).add(i);
             }
         }
         
