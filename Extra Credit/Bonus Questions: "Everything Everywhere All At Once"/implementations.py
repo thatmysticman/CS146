@@ -31,8 +31,3 @@ class ExtraCredit:
                 reversed_list[neighbor].append(i)
         
         return reversed_list
-
-# Example usage:
-# adj_list = [[1, 2], [0, 2], [0, 1]]
-# adj_matrix = ExtraCredit.adjacency_list_to_matrix(adj_list)
-# reversed_list = ExtraCredit.reverse_graph(adj_list)
