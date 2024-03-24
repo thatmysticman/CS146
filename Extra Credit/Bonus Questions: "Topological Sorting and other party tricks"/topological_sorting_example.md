@@ -10,6 +10,15 @@
 | 4    |                |
 | 5    |                |
 
+##### Example Explanation
+In this adjacency list:
+- Node `0` is connected to nodes `1` and `4`.
+- Node `1` is connected to nodes `2` and `3`.
+- Node `2` is connected to node `5`.
+- Node `3` has no outgoing edges.
+- Node `4` has no outgoing edges.
+- Node `5` has no outgoing edges.
+
 #### Sample Input
 
 `graph = {`    
