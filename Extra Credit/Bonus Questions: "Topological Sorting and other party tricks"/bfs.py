@@ -19,6 +19,6 @@ def topological_sort_bfs(graph):
                 queue.append(neighbor)
                 
     if len(result) != len(graph):
-        return None  # Graph has a cycle
+        return None
     
     return result
