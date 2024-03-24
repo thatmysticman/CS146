@@ -12,14 +12,14 @@
 
 #### Sample Input
 
-graph = {
-    0: [1, 4],
-    1: [2, 3],
-    2: [5],
-    3: [],
-    4: [],
-    5: []
-}
+`graph = {`    
+    `0: [1, 4],`    
+    `1: [2, 3],`   
+    `2: [5],`    
+    `3: [],`   
+    `4: [],`    
+    `5: []`    
+`}`    
 
 ##### Kahn's Algorithm
 Kahn's algorithm starts by checking the connections of each vertex and then uses a queue to find vertices without incoming connections. Here's how it sorts our example graph:    
