@@ -1,6 +1,3 @@
-from typing import List
-
-
 def minCostToSupplyWater(n: int, wells: List[int], pipes: List[List[int]]) -> int:
     edges = []
 
@@ -46,9 +43,3 @@ def union(parent, rank, x, y):
     else:
         parent[yRoot] = xRoot
         rank[xRoot] += 1
-
-# Test Case
-n = 2
-wells = [1, 1]
-pipes = [[1, 2, 1], [1, 2, 2]]
-print(minCostToSupplyWater(n, wells, pipes))  # Output: 2
