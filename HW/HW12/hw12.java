@@ -1,13 +1,3 @@
-import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        int n = 2;
-        int[] wells = {1, 1};
-        int[][] pipes = {{1, 2, 1}, {1, 2, 2}};
-        System.out.println(minCostToSupplyWater(n, wells, pipes));  // Output: 2
-    }
-
     public static int minCostToSupplyWater(int n, int[] wells, int[][] pipes) {
         List<int[]> edges = new ArrayList<>();
 
@@ -71,4 +61,3 @@ public class Main {
             rank[xRoot]++;
         }
     }
-}
