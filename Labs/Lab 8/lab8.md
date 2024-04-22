@@ -18,8 +18,8 @@ You may assume that you have an infinite number of each kind of coin.
 
 1. Initialize a dynamic programming (DP) list `dp` of size `amount + 1`, where each element is set to `amount + 1`. This represents the minimum number of coins required to make up the corresponding amount.
 2. Set `dp[0] = 0` since it takes 0 coins to make up an amount of 0.
-3. Loop through each amount from 1 to `amount`:
-   a. For each amount `i`, loop through each coin denomination in `coins`.
+3. Loop through each amount from 1 to `amount`:     
+   a. For each amount `i`, loop through each coin denomination in `coins`.    
    b. If the coin denomination `coin` is less than or equal to `i`:
      - Update `dp[i]` to be the minimum of its current value and `dp[i - coin] + 1`. Here, `dp[i - coin] + 1` represents the minimum number of coins required to make up the amount `i` using the current coin denomination `coin`.
 4. Return `dp[amount]` if it is less than or equal to `amount`, otherwise return `-1`.
@@ -28,8 +28,8 @@ You may assume that you have an infinite number of each kind of coin.
 
 1. Initialize an integer array `dp` of size `amount + 1`, where each element is set to `amount + 1`. This represents the minimum number of coins required to make up the corresponding amount.
 2. Set `dp[0] = 0` since it takes 0 coins to make up an amount of 0.
-3. Loop through each amount from `1` to `amount`:
-   a. For each amount `i`, loop through each coin denomination in `coins`.
+3. Loop through each amount from `1` to `amount`:     
+   a. For each amount `i`, loop through each coin denomination in `coins`.     
    b. If the coin denomination `coin` is less than or equal to `i`:
      - Update `dp[i]` to be the minimum of its current value and `dp[i - coin] + 1`. Here, `dp[i - coin] + 1` represents the minimum number of coins required to make up the amount `i` using the current coin denomination `coin`.
 4. Return `dp[amount]` if it is less than or equal to `amount`, otherwise return `-1`.
